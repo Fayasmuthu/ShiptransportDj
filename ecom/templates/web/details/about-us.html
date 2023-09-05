@@ -1,0 +1,241 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+	<!-- Banner -->
+	<div class="banner inner-page abt-us-banner">
+		<div class="banner-content">
+			<div class="container">
+				<div class="row">
+					<div class="banner-text">
+						<h1 class="page-title">About Us</h1>
+						<p class="page-breadcrumb">Home / <span class="current">About Us</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End banner -->
+
+	<!-- Main Content -->
+	<div class="main-content about-us section-pad">
+		<div class="container">
+			<div class="row">
+				<div class="about-wrapper row">
+					<div class="col-md-5 col-sm-5 res-m-bttm">
+						<img alt="" src="{% static 'web/image/abt-left-img.jpg' %}">
+					</div>
+					<div class="col-md-7 col-sm-7">
+						<div class="about-text">
+							<h2 class="section-heading">About Our Corporation</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor nostrud exercitation ullamco.</p>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+							<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Main content -->
+
+	<!-- Service -->
+	<div class="abt-page section-pad">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+					<div class="service-des-holder row">
+						<h4 class="section-heading">WHY  CHOOSE US</h4>
+						<p>Lorem ipsum dolor sit amet, consecteturt adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Veniam quis nostrud exercitation ullamco laboris nisi uconsequat. </p>
+						<div class="service-wrapper clearfix">
+							<div class="ser-col row">
+								<div class="col-sm-6 clearfix">
+									<div class="icon-wrapper">
+										<span class="icon icon-secure"></span>
+									</div>
+									<h4>Secure</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan tiudo lorem quveniamv eniam laud accusan tiud.</p>
+								</div>
+								<div class="col-sm-6">
+									<div class="icon-wrapper">
+										<span class="icon icon-track"></span>
+									</div>
+									<h4>fast delivery</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan tiudo lorem quveniamv eniam laud accusan tiud.</p>
+								</div>
+							</div>
+							<div class="ser-col row">
+								<div class="col-sm-6">
+									<div class="icon-wrapper">
+										<span class="icon icon-lorry"></span>
+									</div>
+									<h4>Trackable</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan tiudo lorem quveniamv eniam laud accusan tiud.</p>
+								</div>
+								<div class="col-sm-6">
+									<div class="icon-wrapper">
+										<span class="icon icon-cup"></span>
+									</div>
+									<h4>Reliable</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan tiudo lorem quveniamv eniam laud accusan tiud.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5 hidden-sm hidden-xs position">
+					<div class="img-wrapper">
+						<img alt="" src="{% static 'web/image/ser-img.png' %}">
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<!-- End service -->
+
+	<!-- Call  action -->
+	<div class="call-action parallaxie has-parallax" style="background:url('{% static 'web/image/call-action-bg.jpg' %}');">
+		<div class="overly">
+			<div class="container">
+				<div class="row">
+					<h2>we are dedicated to provide the best services<br>
+					at the lowest possible cost</h2>
+					<a class="btn solid-btn" href="get-a-quote.html">Get A Quote</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End call action -->
+
+	<!-- testimonial & video -->
+	<div class="testimonial-sec">
+		<div class="container">
+			<div class="row">
+				<div class="tst-wrapper">
+					<div class="tst-place">
+						<div class="testimonial">
+							<div class="row">
+								<div class="col-md-8">
+									<h5 class="meta-head">Our Happy</h5>
+									<h4 class="section-heading">Client Says</h4>
+									<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sedi dots eiusmod tempor ut labore incididunt dolore magna aliqua. Veniam labore quis nostrud exercitation ullamco.</p>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							<div id="carousel" class="carousel slide row" data-ride="carousel">
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<div class="col-md-6">
+											<div class="testimonial-text">
+												<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam.</p>
+											</div>
+											<div class="profile">
+												<img alt="" src="{% static 'web/image/profile-img.jpg' %}">
+												<h5>John Doe</h5>
+												<h6>CEO, Company Name</h6>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="testimonial-text">
+												<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam.</p>
+											</div>
+											<div class="profile">
+												<img alt="" src="{% static 'web/image/profile-img.jpg' %}">
+												<h5>John Doe</h5>
+												<h6>CEO, Company Name</h6>
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<div class="col-md-6">
+											<div class="testimonial-text">
+												<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam.</p>
+											</div>
+											<div class="profile">
+												<img alt="" src="{% static 'web/image/profile-img.jpg' %}">
+												<h5>John Doe</h5>
+												<h6>CEO, Company Name</h6>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="testimonial-text">
+												<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam.</p>
+											</div>
+											<div class="profile">
+												<img alt="" src="{% static 'web/image/profile-img.jpg' %}">
+												<h5>John Doe</h5>
+												<h6>CEO, Company Name</h6>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="col-md-6">
+											<div class="testimonial-text">
+												<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam.</p>
+											</div>
+											<div class="profile">
+												<img alt="" src="{% static 'web/image/profile-img.jpg' %}">
+												<h5>John Doe</h5>
+												<h6>CEO, Company Name</h6>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="testimonial-text">
+												<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam.</p>
+											</div>
+											<div class="profile">
+												<img alt="" src="{% static 'web/image/profile-img.jpg' %}">
+												<h5>John Doe</h5>
+												<h6>CEO, Company Name</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#carousel" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel" data-slide-to="1"></li>
+									<li data-target="#carousel" data-slide-to="2"></li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End testimonial & video -->
+
+	<!-- Client logo -->
+	<div class="cl-logo section-pad">
+		<div class="container">
+			<div class="row">
+				<div class="owl-carousel loop logo-carousel">
+					 <div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-1.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-2.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-3.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-4.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-5.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos.png' %}">
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!-- Client logo -->
+{% endblock %}

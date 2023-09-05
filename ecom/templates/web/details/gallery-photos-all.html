@@ -1,0 +1,595 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+
+{% block content %}
+	<!-- End navabr -->
+	<link rel="stylesheet" type="text/css" href="{% static 'web/css/magnific-popup.css' %}">
+
+
+
+
+
+	<!-- Banner -->
+	<div class="banner inner-page abt-us-banner">
+		<div class="banner-content">
+			<div class="container">
+				<div class="row">
+					<div class="banner-text">
+						<h1 class="page-title">Photo Gallery</h1>
+						<p class="page-breadcrumb">Home / Gallery / <span class="current">Album Name</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End banner -->
+
+	<div class="gallery-section section-pad">
+		<div class="container">
+			<div class="row content">
+
+				<div class="col-md-offset-2 col-md-8 text-center">
+					<h2 class="section-heading">Gallery With Filter</h2>
+					<p>Photo gallery filled with 3 column (Zoom Effect)</p>
+				</div>
+				<!-- Gallery - Filter Menu -->
+				<div class="clear"></div>
+				<div class="gallery-lists filter-menu text-center">
+                    <ul class="list">
+                        <li class="active" data-filter="all">all</li>
+                        <li data-filter="1">Events</li>
+                        <li data-filter="2">Tours</li>
+                        <li data-filter="3">Trading</li>
+                        <li data-filter="4">Constration</li>
+                    </ul>
+				</div>
+				<!-- Gallery Filter section (!required 'gallery-filter' class name) -->
+				<div class="gallery gallery-filter gallery-lightbox gallery-photos gallery-filled hover-zoom">
+
+					<ul class="photos-list col-x3">
+						<li class="filtr-item" data-category="1">
+							<a href="{% static 'web/image/gallery1-large.jpg' %}">
+							<div class="photo">
+								<img src="{% static 'web/image/gallery1.jpg' %}" alt="Photo Title">
+							</div>
+							</a>
+						</li>
+						<li class="filtr-item" data-category="2">
+							<a href="{% static 'web/image/gallery2-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery2.jpg' %}" alt="@by Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li class="filtr-item" data-category="1, 3">
+							<a href="{% static 'web/image/gallery3-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery3.jpg' %}" alt="@by Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li class="filtr-item" data-category="3">
+							<a href="{% static 'web/image/gallery4-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery4.jpg' %}" alt="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li class="filtr-item" data-category="4">
+							<a href="{% static 'web/image/gallery5-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery5.jpg' %}" alt="" title="Another Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li class="filtr-item" data-category="3">
+							<a href="{% static 'web/image/gallery6-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery6.jpg' %}" alt="Photo credit - Another Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+
+						<li class="filtr-item" data-category="4, 3">
+							<a href="{% static 'web/image/gallery7-large.jpg' %}">
+							<div class="photo">
+								<img src="{% static 'web/image/gallery7.jpg' %}" alt="Photo Title">
+							</div>
+							</a>
+						</li>
+						<li class="filtr-item" data-category="2">
+							<a href="{% static 'web/image/gallery8-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery8.jpg' %}" alt="@by Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li class="filtr-item" data-category="1">
+							<a href="{% static 'web/image/gallery9' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery9.jpg' %}" alt="@by Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li class="filtr-item" data-category="3, 2">
+							<a href="{% static 'web/image/gallery10-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery10.jpg' %}" alt="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li class="filtr-item" data-category="4">
+							<a href="{% static 'web/image/gallery11-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery11.jpg' %}" alt="" title="Another Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li class="filtr-item" data-category="3">
+							<a href="{% static 'web/image/gallery12-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery12.jpg' %}" alt="Photo credit - Another Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+				<!-- Gallery #end -->
+
+				<hr>
+				<div class="col-md-offset-2 col-md-8 text-center">
+					<h2 class="section-heading">Gallery A</h2>
+					<p>Photo gallery filled with 3 column (Fade Effect)</p>
+				</div>
+				<!-- Gallery -Photo #A -->
+				<div class="clear"></div>
+				<div class="gallery gallery-lightbox gallery-photos gallery-filled hover-fade">
+
+					<ul class="photos-list col-x3">
+						<li>
+							<a href="{% static 'web/image/gallery1-large.jpg' %}">
+							<div class="photo">
+								<img src="{% static 'web/image/gallery1.jpg' %}" alt="Photo Title">
+							</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery2-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery2.jpg' %}" alt="@by Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery3-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery3.jpg' %}" alt="@by Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery4-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery4.jpg' %}" alt="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery5-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery5.jpg' %}" alt="" title="Another Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery6-large.jpg' %}" title="Photo Title">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery6.jpg' %}" alt="Photo credit - Another Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+				<!-- Gallery #end -->
+
+				<hr>
+				<div class="col-md-offset-2 col-md-8 text-center">
+					<h2 class="section-heading">Gallery B</h2>
+					<p>Photo gallery filled with 4 column (Zoom Effect)</p>
+				</div>
+				<!-- Gallery -Photo #B -->
+				<div class="clear"></div>
+				<div class="gallery gallery-lightbox gallery-photos gallery-filled hover-zoom">
+
+					<ul class="photos-list col-x4">
+						<li>
+							<a href="{% static 'web/image/gallery1-large.jpg' %}">
+							<div class="photo">
+								<img src="{% static 'web/image/gallery1.jpg' %}" alt="Photo Title">
+							</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery2-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery2.jpg' %}" alt="@by Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery3-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery3.jpg' %}" alt="@by Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery4-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery4.jpg' %}" alt="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery5-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery5.jpg' %}" alt="" title="Another Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery6-large.jpg' %}" title="Photo Title">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery6.jpg' %}" alt="Photo credit - Another Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery7-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery7.jpg' %}" alt="Photo/Project Name">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery8-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery8.jpg' %}" alt="Project Name">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery9-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery9.jpg' %}" alt="Photo/Project Name">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery10-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery10.jpg' %}" alt="Project Name">
+								</div>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+				<!-- Gallery #end -->
+
+				<hr>
+				<div class="col-md-offset-2 col-md-8 text-center">
+					<h2 class="section-heading">Gallery D</h2>
+					<p>Photo gallery grid with 3 column (Zoom Effect)</p>
+				</div>
+				<!-- Gallery -Photo #A -->
+				<div class="clear"></div>
+				<div class="gallery gallery-lightbox gallery-photos hover-zoom">
+
+					<ul class="photos-list col-x3">
+						<li>
+							<a href="{% static 'web/image/gallery1-large.jpg' %}">
+							<div class="photo">
+								<img src="{% static 'web/image/gallery1.jpg' %}" alt="Photo Title">
+							</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery2-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery2.jpg' %}" alt="@by Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery3-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery3.jpg' %}" alt="@by Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery4-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery4.jpg' %}" alt="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery5-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery5.jpg' %}" alt="" title="Another Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery6-large.jpg' %}" title="Photo Title">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery6.jpg' %}" alt="Photo credit - Another Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+				<!-- Gallery #end -->
+
+				<hr>
+				<div class="col-md-offset-2 col-md-8 text-center">
+					<h2 class="section-heading">Gallery E</h2>
+					<p>Photo gallery grid with 4 column (Fade Effect)</p>
+				</div>
+				<!-- Gallery -Photo #E -->
+				<div class="clear"></div>
+				<div class="gallery gallery-lightbox gallery-photos hover-fade">
+
+					<ul class="photos-list col-x4">
+						<li>
+							<a href="{% static 'web/image/gallery1-large.jpg' %}">
+							<div class="photo">
+								<img src="{% static 'web/image/gallery1.jpg' %}" alt="Photo Title">
+							</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery2-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery2.jpg' %}" alt="@by Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery3-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery3.jpg' %}" alt="@by Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery4-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery4.jpg' %}" alt="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery5-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery5.jpg' %}" alt="" title="Another Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery6-large.jpg' %}" title="Photo Title">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery6.jpg' %}" alt="Photo credit - Another Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery7-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery7.jpg' %}" alt="Photo/Project Name">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery8-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery8.jpg' %}" alt="Project Name">
+								</div>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+				<!-- Gallery #end -->
+
+				<hr>
+				<div class="col-md-offset-2 col-md-8 text-center">
+					<h2 class="section-heading">Gallery F</h2>
+					<p>Photo gallery grid with 5 column (Zoom Effect)</p>
+				</div>
+				<!-- Gallery -Photo #C -->
+				<div class="clear"></div>
+				<div class="gallery gallery-lightbox gallery-photos hover-zoom">
+
+					<ul class="photos-list col-x5">
+						{% for photo in photos %}
+						<li>
+							<a href="{{ photo.image.url }}" data-lightbox="photos">
+							<div class="photo">
+								<img src="{{ photo.image.url }}" alt="{{ photo.title }}">
+							</div>
+							</a>
+						</li>
+						{% endfor %}
+						{% comment %} 
+						<li>
+							<a href="{% static 'web/image/gallery2-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery2.jpg' %}" alt="@by Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery3-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery3.jpg' %}" alt="@by Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery4-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery4.jpg' %}" alt="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery5-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery5.jpg' %}" alt="" title="Another Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery6-large.jpg' %}" title="Photo Title">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery6.jpg' %}" alt="Photo credit - Another Author" title="Name of Photo">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery7-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery7.jpg' %}" alt="Photo/Project Name">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery8-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery8.jpg' %}" alt="Project Name">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery9-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery9.jpg' %}" alt="Photo/Project Name">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="{% static 'web/image/gallery10-large.jpg' %}">
+								<div class="photo">
+									<img src="{% static 'web/image/gallery10.jpg' %}" alt="Project Name">
+								</div>
+							</a>
+						</li>
+					</ul>
+
+				</div> {% endcomment %}
+				<!-- Gallery #end -->
+
+				    <!-- Photo Gallery -->
+					{% comment %} <div class="photo-gallery">
+						<div class="container">
+							<div class="row">
+								{% for photo in photos %}
+								<div class="col-md-3">
+									<div class="photo-item">
+										<a href="{{ photo.image.url }}" data-lightbox="photos">
+											<img src="{{ photo.image.url }}" alt="{{ photo.title }}">
+										</a>
+										<h3>{{ photo.title }}</h3>
+									</div>
+								</div>
+								{% endfor %}
+							</div>
+						</div>
+					</div> {% endcomment %}
+				
+					<!-- Pagination -->
+					<div class="pagination">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									{% if photos.has_previous %}
+										<a href="?page=1">&laquo; First</a>
+										<a href="?page={{ photos.previous_page_number }}">Previous</a>
+									{% endif %}
+									{% for i in photos.paginator.page_range %}
+										{% if photos.number == i %}
+											<span class="current">{{ i }}</span>
+										{% else %}
+											<a href="?page={{ i }}">{{ i }}</a>
+										{% endif %}
+									{% endfor %}
+									{% if photos.has_next %}
+										<a href="?page={{ photos.next_page_number }}">Next</a>
+										<a href="?page={{ photos.paginator.num_pages }}">Last &raquo;</a>
+									{% endif %}
+								</div>
+							</div>
+						</div>
+					</div>
+			
+
+			</div>		
+		</div>
+	</div>
+
+	<!-- Call  action -->
+	<div class="call-action call-action-small call-action-simple">
+		<div class="overly">
+			<div class="container">
+				<div class="row">
+					<div class="cta-sameline">
+						<h3>Ready to start work with us?</h3>
+						<a class="btn solid-btn" href="contact.html">Get In Touch</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End call action -->
+
+	<!-- Client logo -->
+	<div class="cl-logo section-pad">
+		<div class="container">
+			<div class="row">
+				<div class="owl-carousel loop logo-carousel">
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client/logos-1.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-2.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-3.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-4.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-5.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos.png' %}">
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!-- Client logo -->
+
+	<script src="{% static 'web/js/filterizr.min.js' %}"></script>
+<script src="{% static 'web/js/magnific-popup.min.js' %}"></script>
+	<!-- Client logo -->
+{% endblock %}
+
+

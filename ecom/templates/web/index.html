@@ -1,0 +1,367 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+
+{% block content %}
+
+	<!-- Banner -->
+	<div id="slider"  class="banner carousel slide carousel-fade">
+		<!-- Wrapper for Slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<!-- Set the first background image using inline CSS below. -->
+				<div class="fill" style="background-image:url('{% static 'web/img/banner png.png' %}');">
+					<div class="banner-content">
+						<div class="container">
+							<div class="row">
+								<div class="banner-text">
+									<div class="animated fadeInRight">
+										<h1>PROVIDING FIRST CLASS <br> LOGISTIC SERVICES</h1>
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+										<div class="btn-banner">
+											<a class="btn solid-btn" href="{% url 'service' %}">our services</a>
+											<a class="btn solid-btn" href="{% url 'get' %}">get a quote</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<!-- Set the second background image using inline CSS below. -->
+				<div class="fill" style="background-image:url('{% static 'web/image/banner-2.jpg' %}');">
+					<div class="banner-content">
+						<div class="container">
+							<div class="row">
+								<div class="banner-text f-w text-center w-color">
+									<div class="animated fadeInUp">
+										<h1 class="w-heading">WORLD CLASS <br> SHIPPING SERVICES</h1>
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+										<div class="btn-banner">
+											<a class="btn solid-btn" href="{% url 'service' %}">our services</a>
+											<a class="btn trns-btn-w" href="{% url 'get' %}">get a quote</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div class="item">
+				<!-- Set the third background image using inline CSS below. -->
+				<div class="fill" style="background-image:url('{% static 'web/image/banner-3.jpg' %}');">
+					<div class="banner-content">
+						<div class="container">
+							<div class="row">
+								<div class="banner-text text-right w-color pull-right">
+									<div class="animated fadeInLeft">
+										<h1 class="w-heading">WORLD WIDE <br> TRANSPORT SERVICE</h1>
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+										<div class="btn-banner animated">
+											<a class="btn solid-btn" href="{% url 'service' %}">our services</a>
+											<a class="btn trns-btn-w" href="{% url 'get' %}">get a quote</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+		<!-- Left and right controls -->
+		<a class="left carousel-control" href="#slider" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#slider" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<!-- End banner -->
+
+	<!-- Main content -->
+	<div class="main-content about-us section-pad">
+		<div class="container">
+			<div class="row">
+				<div class="about-wrapper row">
+					<div class="col-md-6 res-m-bttm featured-tabs">
+						<div class="tab-custom">
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><img alt="" src="{% static 'web/image/tab-truck.png' %}"><br>Land Transport</a></li>
+								<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><img alt="" src="{% static 'web/image/tab-plane.png' %}"><br>Worldwide Transport</a></li>
+								<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><img alt="" src="{% static 'web/image/tab-ware.png' %}"><br>Own Warehousing</a></li>
+							</ul>
+
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane fade in active" id="home">
+									<h4 data-cursor-img="{% static 'web/image/tab-truck.png' %}">Land Transport</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p>
+									<a class="btn trns-btn" href="service-single.html">Read More</a>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="profile">
+									<h4 data-cursor-img="{% static 'web/image/tab-plane.png' %}">Worldwide Transport</h4>
+									<p>Voluptatem quia voluptas sit aspernatur aut odit aut fugit . Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam, sed quia consequuntur magni dolores.</p>
+									<a class="btn trns-btn" href="#">Read More</a>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="messages">
+									<h4 data-cursor-img="{% static 'web/image/tab-ware.png' %}">Own Warehousing</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p>
+									<a class="btn trns-btn" href="#">Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="about-text">
+							<h4 class="section-heading" data-cursor-text="About" data-cursor-stick>About us</h4>
+							<h2 class="focus-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem </h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea...</p>
+							<a class="btn trns-btn" href="{% url 'aboutus' %}">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Main content -->
+
+	<!-- Call  action -->
+	<div class="call-action has-parallax" style="background: url('{% static 'web/image/call-action-bg.jpg' %}');">
+		<div class="overly">
+			<div class="container">
+				<div class="row">
+					<h2>we are dedicated to provide the best services <br> at the lowest possible cost</h2>
+					<a class="btn solid-btn" href="{% url 'get' %}">get a quote</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End call action -->
+
+	<!-- Featured of Service -->
+	<div class="service section-pad">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-2 col-md-8">
+					<h4 class="section-heading">WHY  CHOOSE US</h4>
+					<p>Lorem ipsum dolor sit amet consectetur to adipiscing elit, sed dot eiusmod tempor incididunt labore et dolore magna aliqua. Veniam quis nostrud exercitation ullamco laboris nisiut.</p>
+				</div>
+				<div class="clearfix"></div>
+				<ul class="service-wrapper row">
+					<li class="col-md-3 col-sm-6 res-m-bttm">
+						<div class="icon-wrapper">
+							<img alt="" src="{% static 'web/image/ser-secure.png' %}">
+						</div>
+						<h4>Secure</h4>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant iudol oremq dauri.</p>
+					</li>
+					<li class="col-md-3 col-sm-6 res-m-bttm">
+						<div class="icon-wrapper">
+							<img alt="" src="{% static 'web/image/ser-truck.png' %}">
+						</div>
+						<h4>fast delivery</h4>
+						<p>Accusan tiused ut perspiciatis unde omnis iste natus error sit voluptatem  dolore mque.</p>
+					</li>
+					<li class="col-md-3 col-sm-6 res-m-bttm">
+						<div class="icon-wrapper">
+							<img alt="" src="{% static 'web/image/ser-track.png' %}">
+						</div>
+						<h4>Trackable</h4>
+						<p>Voluptatem sed ut perspiciatis unde omnis iste natus error sit accusantiu dolo remque laud.</p>
+					</li>
+					<li class="col-md-3 col-sm-6">
+						<div class="icon-wrapper">
+							<img alt="" src="{% static 'web/image/ser-cup.png' %}">
+						</div>
+						<h4>Reliable</h4>
+						<p>Perspiciatis sed ut  unde omnis iste natus error sit voluptatem accusantiu dolor emques.</p>
+					</li>
+				</ul>
+			</div>			
+		</div>
+	</div>
+	<!-- End Featured -->
+
+	<!-- Quote -->
+	<div class="quote section-pad">
+		<div class="container">
+			<div class="row">
+				<div class="quote-container row">
+					<div class="col-md-6 hidden-sm hidden-xs position">
+						<div class="img-wrapper">
+							<img alt="" src="{% static 'web/image/quote-img.png' %}">
+						</div>
+					</div>
+					<div class="col-md-6 quote-wrapper">
+						<h4 class="section-heading">Quick quote</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						<form id="contactus" class="form-quote" action="" method="POST">
+							{% csrf_token %}
+							<div class="form-results"></div>
+							<div class="form-group row">
+								<div class="form-field col-md-6 form-m-bttm">
+									<input name="C-name" type="text" placeholder="Name *" class="form-control required">
+								</div>
+								<div class="form-field col-md-6">
+									<input name="C-email" type="email" placeholder="Email *" class="form-control required email">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="form-field col-md-6 form-m-bttm">
+									<input name="C-phone" type="text" placeholder="Phone" class="form-control">
+								</div>
+								<div class="form-field col-md-6">
+									<input name="C-service" type="text" placeholder="Interest of Service" class="form-control">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="form-field col-md-12">
+									<textarea name="C-message" placeholder="Messages *" class="area-from form-control required"></textarea>
+								</div>
+							</div>
+							<input type="text" class="hidden" name="formhidden" value="contactus">
+							<button type="submit" class="btn solid-btn sb-h">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End quote -->
+
+	<!-- Statistics -->
+	<div class="statistics has-parallax" style="background: url('{% static 'web/image/stat.jpg' %}');">
+		<div class="overly">
+			<div class="container">
+				<div class="row">
+					<div class="stat-wrapper">
+						<div class="row">
+							<div class="col-md-3 col-sm-6 stat-col">
+								<div class="stat-top">
+									<i class="fa fa-calendar" aria-hidden="true"></i><span class="counter">15</span>
+								</div>
+								<p>Offices Worldwide</p>
+							</div>
+							<div class="col-md-3 col-sm-6 stat-col">
+								<div class="stat-top">
+									<i class="fa fa-users" aria-hidden="true"></i><span class="counter">97</span>
+								</div>
+								<p>Hardworking People</p>
+							</div>
+							<div class="col-md-3 col-sm-6 stat-col">
+								<div class="stat-top">
+									<i class="fa fa-globe" aria-hidden="true"></i><span class="counter">12</span>
+								</div>
+								<p>Countries Covered</p>
+							</div>
+							<div class="col-md-3 col-sm-6 stat-col">
+								<div class="stat-top">
+									<i class="fa fa-users" aria-hidden="true"></i><span class="counter">25</span>
+								</div>
+								<p>Years of Experiences</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End statistics -->
+
+	<!-- testimonial & video -->
+	<div class="testi-video section">
+		<div class="container">
+			<div class="row">
+				<div class="tstvideo-wrapper row">
+					<div class="col-md-6 res-m-bttm">
+						<div class="testimonial no-dots">
+							<h5 class="meta-head">Our Happy</h5>
+							<h4 class="section-heading">Client Says</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur t adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua veniam quis.</p>
+							<div id="carousel" class="carousel slide" data-ride="carousel">
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<div class="testimonial-text">
+											<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+										</div>
+										<div class="profile">
+											<img alt="" src="{% static 'web/image/profile-img.jpg' %}">
+											<h5>John Doe</h5>
+											<h6>CEO, Company Name</h6>
+										</div>
+									</div>
+
+									<div class="item">
+										<div class="testimonial-text">
+											<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+										</div>
+										<div class="profile">
+											<img alt="" src="{% static 'web/image/profile-img.jpg' %}">
+											<h5>John Doe</h5>
+											<h6>CEO, Company Name</h6>
+										</div>
+									</div>
+									<div class="item">
+										<div class="testimonial-text">
+											<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+										</div>
+										<div class="profile">
+											<img alt="" src="{% static 'web/image/profile-img.jpg' %}">
+											<h5>John Doe</h5>
+											<h6>CEO, Company Name</h6>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 video">
+						<h5 class="meta-head">Watch the video and take </h5>
+						<h4 class="section-heading">some idea about our company</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+						<div class="video-wrapper">
+							<iframe height="300" width="480" src="https://www.youtube.com/embed/e9P0gyAH_QE"></iframe>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End testimonial & video -->
+
+	<!-- Client logo -->
+	<div class="cl-logo section-pad">
+		<div class="container">
+			<div class="row">
+				<div class="owl-carousel loop logo-carousel">
+					 <div>
+						<img alt="F" width="190" height="82" src="{% static 'web/img/client logos-1.png' %}">
+					</div>
+					<div>
+						<img alt="F" width="190" height="82" src="{% static 'web/img/client logos-2.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-3.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-4.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-5.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos.png' %}">
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!-- Client logo -->
+
+	{% endblock  %}

@@ -1,0 +1,81 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+
+{% block content %}
+
+	<!-- Banner -->
+	<div id="slider"  class="banner carousel slide carousel-fade">
+		<!-- Wrapper for Slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<!-- Set the first background image using inline CSS below. -->
+				<div class="fill" style="background-image:url('{% static 'web/image/banner.jpg' %}');">
+					<div class="banner-content">
+						<div class="container">
+							<div class="row">
+								<div class="banner-text">
+									<div class="animated fadeInRight">
+										<h1>PROVIDING FIRST CLASS <br> LOGISTIC SERVICES</h1>
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+										<div class="btn-banner">
+											<a class="btn solid-btn" href="service.html">our services</a>
+											<a class="btn solid-btn" href="get-a-quote.html">get a quote</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End banner -->
+
+	<!-- Main content -->
+	<div class="main-content about-us section-pad">
+		<div class="container">
+			<div class="row">
+				<div class="about-wrapper row">
+					<div class="col-md-6 res-m-bttm featured-tabs">
+						<div class="tab-custom">
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><img alt="" src="{% static 'web/image/tab-truck.png' %}"><br>Land Transport</a></li>
+								<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><img alt="" src="{% static 'web/image/tab-plane.png' %}"><br>Worldwide Transport</a></li>
+								<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><img alt="" src="{% static 'web/image/tab-ware.png' %}"><br>Own Warehousing</a></li>
+							</ul>
+
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane fade in active" id="home">
+									<h4>Land Transport</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p>
+									<a class="btn trns-btn" href="service-single.html">Read More</a>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="profile">
+									<h4>Worldwide Transport</h4>
+									<p>Voluptatem quia voluptas sit aspernatur aut odit aut fugit . Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam, sed quia consequuntur magni dolores.</p>
+									<a class="btn trns-btn" href="#">Read More</a>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="messages">
+									<h4>Own Warehousing</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p>
+									<a class="btn trns-btn" href="#">Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="about-text">
+							<h4 class="section-heading">About us</h4>
+							<h2 class="focus-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem </h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea...</p>
+							<a class="btn trns-btn" href="about-us.html">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Main content -->
+{% endblock %}

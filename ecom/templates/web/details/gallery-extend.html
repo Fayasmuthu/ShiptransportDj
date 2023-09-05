@@ -1,0 +1,255 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+
+{% block content %}
+	<link rel="stylesheet" type="text/css" href="{% static 'web/css/magnific-popup.css' %}">
+
+	<!-- Banner -->
+	<div class="banner inner-page abt-us-banner">
+		<div class="banner-content">
+			<div class="container">
+				<div class="row">
+					<div class="banner-text">
+						<h1 class="page-title">Gallery</h1>
+						<p class="page-breadcrumb">Home / <span class="current">Our Gallery</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End banner -->
+<div class="gallery-section section-pad">
+		<div class="container">
+			<div class="row content">
+
+				<div class="col-md-offset-2 col-md-8 text-center">
+					<h2 class="section-heading">Our Gallery</h2>
+					<p>Lorem ipsum dolor sit amet consectetur to adipiscing elit, sed dot eiusmod tempor incididunt labore et dolore magna aliqua. Veniam quis nostrud exercitation ullamco laboris nisiut.</p>
+				</div>
+				<!-- Gallery - Filter Menu -->
+				<div class="clear"></div>
+				<div class="gallery-lists filter-menu text-center">
+                    <ul class="list">
+                        <li class="active" data-filter="all">all</li>
+                        <li data-filter="1">Building</li>
+                        <li data-filter="2">Tours</li>
+                        <li data-filter="3">Trading</li>
+                        <li data-filter="4">Constration</li>
+                    </ul>
+				</div>
+				<!-- Gallery Filter section (!required 'gallery-filter' class name in gallery & also filter-menu section above) -->
+				<div class="gallery gallery-filter gallery-photos gallery-modern with-caption hover-fade">
+
+					<ul class="photos-list col-x3">
+						<li class="filtr-item" data-category="1">
+							<div class="photo">
+								<img src="image/gallery1.jpg" alt="Photo Title 1">
+								<div class="photo-link">
+									<span class="links">
+										<a class="btn more-link" href="gallery-photos.html">View Gallery</a>
+										<a class="btn single-lightbox" href="{% static 'web/image/gallery1-large.jpg' %}" title="Photo Title 1">Enlarge</a>
+									</span>
+								</div>
+							</div>
+							<div class="photo-caption">
+								<a href="gallery-photos.html">
+									<h4>Project Gallery 2017</h4>
+									<p>Lovely View</p>
+								</a>
+							</div>
+						</li>
+						<li class="filtr-item" data-category="2">
+							<div class="photo">
+								<img src="image/gallery2.jpg" alt="Photo Title 2">
+								<div class="photo-link">
+									<span class="links">
+										<a class="btn more-link" href="gallery-photos.html">View Gallery</a>
+										<a class="btn single-lightbox" href="{% static 'web/image/gallery2-large.jpg' %}" title="Photo Title 2">Enlarge</a>
+									</span>
+								</div>
+							</div>
+							<div class="photo-caption">
+								<a href="gallery-photos.html">
+									<h4>Awesome Gallery 2016</h4>
+									<p>Lovely View</p>
+								</a>
+							</div>
+						</li>
+						<li class="filtr-item" data-category="3">
+							<div class="photo">
+								<img src="image/gallery3.jpg" alt="Photo Title 3">
+								<div class="photo-link">
+									<span class="links">
+										<a class="btn more-link" href="gallery-photos.html">View Gallery</a>
+										<a class="btn single-lightbox" href="{% static 'web/image/gallery3-large.jpg' %}" title="Photo Title 3">Enlarge</a>
+									</span>
+								</div>
+							</div>
+							<div class="photo-caption">
+								<a href="gallery-photos.html">
+									<h4>Project Gallery 2016</h4>
+									<p>Company Trading</p>
+								</a>
+							</div>
+						</li>
+						<li class="filtr-item" data-category="4">
+							<div class="photo">
+								<img src="image/gallery4.jpg" alt="Photo Title 4">
+								<div class="photo-link">
+									<span class="links">
+										<a class="btn more-link" href="gallery-photos.html">View Gallery</a>
+										<a class="btn single-lightbox" href="{% static 'web/image/gallery4-large.jpg' %}" title="Photo Title 4">Enlarge</a>
+									</span>
+								</div>
+							</div>
+							<div class="photo-caption">
+								<a href="gallery-photos.html">
+									<h4>Project Gallery 2015</h4>
+									<p>Lovely View</p>
+								</a>
+							</div>
+						</li>
+						<li class="filtr-item" data-category="4">
+							<div class="photo">
+								<img src="image/gallery5.jpg" alt="Photo Title 5">
+								<div class="photo-link">
+									<span class="links">
+										<a class="btn more-link" href="gallery-photos.html">View Gallery</a>
+										<a class="btn single-lightbox" href="{% static 'web/image/gallery5-large.jpg' %}" title="Photo Title 5">Enlarge</a>
+									</span>
+								</div>
+							</div>
+							<div class="photo-caption">
+								<a href="gallery-photos.html">
+									<h4>Project Gallery 2015</h4>
+									<p>Lovely View</p>
+								</a>
+							
+						</div>
+					</li>
+						<li class="filtr-item" data-category="3, 2">
+							<div class="photo">
+								<img src="image/gallery6.jpg" alt="Photo Title 6">
+								<div class="photo-link">
+									<span class="links">
+										<a class="btn more-link" href="gallery-photos.html">View Gallery</a>
+										<a class="btn single-lightbox" href="{% static 'web/image/gallery6-large.jpg' %}" title="Photo Title 6">Enlarge</a>
+									</span>
+								</div>
+							</div>
+							<div class="photo-caption">
+								<a href="gallery-photos.html">
+									<h4>Project Gallery 2014</h4>
+									<p>Lovely View</p>
+								</a>
+							</div>
+						</li>
+
+						<li class="filtr-item" data-category="2, 1">
+							<div class="photo">
+								<img src="image/gallery7.jpg" alt="Photo Title 7">
+								<div class="photo-link">
+									<span class="links">
+										<a class="btn more-link" href="gallery-photos.html">View Gallery</a>
+										<a class="btn single-lightbox" href="{% static 'web/image/gallery7-large.jpg' %}" title="Photo Title 7">Enlarge</a>
+									</span>
+								</div>
+							</div>
+							<div class="photo-caption">
+								<a href="gallery-photos.html">
+									<h4>Additional Gallery 2016</h4>
+									<p>Lovely View</p>
+								</a>
+							</div>
+						</li>
+						<li class="filtr-item" data-category="1">
+							<div class="photo">
+								<img src="image/gallery8.jpg" alt="Photo Title 8">
+								<div class="photo-link">
+									<span class="links">
+										<a class="btn more-link" href="gallery-photos.html">View Gallery</a>
+										<a class="btn single-lightbox" href="{% static 'web/image/gallery8-large.jpg' %}" title="Photo Title 8">Enlarge</a>
+									</span>
+								</div>
+							</div>
+							<div class="photo-caption">
+								<a href="gallery-photos.html">
+									<h4>Title Of Gallery</h4>
+									<p>Lovely View</p>
+								</a>
+							</div>
+						</li>
+						<li class="filtr-item" data-category="3, 4">
+							<div class="photo">
+								<img src="image/gallery10.jpg" alt="Photo Title 10">
+								<div class="photo-link">
+									<span class="links">
+										<a class="btn more-link" href="gallery-photos.html">View Gallery</a>
+										<a class="btn single-lightbox" href="{% static 'web/image/gallery10-large.jpg' %}" title="Photo Title 10">Enlarge</a>
+									</span>
+								</div>
+							</div>
+							<div class="photo-caption">
+								<a href="gallery-photos.html">
+									<h4>Gallery Album Title</h4>
+									<p>Trading View</p>
+								</a>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+				<!-- Gallery #end -->
+
+			</div>		
+		</div>
+	</div>
+	
+	<!-- Call  action -->
+	<div class="call-action call-action-small call-action-simple">
+		<div class="overly">
+			<div class="container">
+				<div class="row">
+					<div class="cta-sameline">
+						<h3>Ready to start work with us?</h3>
+						<a class="btn solid-btn" href="contact.html">Get In Touch</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End call action -->
+
+	<!-- Client logo -->
+	<div class="cl-logo section-pad">
+		<div class="container">
+			<div class="row">
+				<div class="owl-carousel loop logo-carousel">
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-1.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-2.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-3.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-4.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-5.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos.png' %}">
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!-- Client logo -->
+	<!-- Gallery/Filter Script-->
+	<script src="{% static 'web/js/filterizr.min.js' %}"></script>
+	<script src="{% static 'web/js/magnific-popup.min.js' %}"></script>
+	
+	{% endblock %}

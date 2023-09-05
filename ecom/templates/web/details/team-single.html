@@ -1,0 +1,77 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+
+{% block content %}
+
+	<!-- Banner -->
+	<div class="banner inner-page abt-us-banner">
+		<div class="banner-content">
+			<div class="container">
+				<div class="row">
+					<div class="banner-text">
+						<h1 class="page-title">Our Teams</h1>
+						<p class="page-breadcrumb">Home / About / Team / <span class="current">Profile Name</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End banner -->
+
+	<!-- team -->
+	<div class="teams section-pad">
+		<div class="container">
+			<div class="row">
+
+				<div class="content row team-profile">
+					<div class="team-member">
+						<div class="team-photo col-md-4 col-sm-5 col-xs-12">
+							<img alt="" src="image/team1.jpg" srcset="{% static 'web/image/team1-2x.jpg ' %} 2x">
+						</div>
+						<div class="team-info col-md-8 col-sm-7 col-xs-12">
+							<h2 class="name">Mary Till</h2>
+							<p class="sub-title">Executive Officer</p>
+							<ul class="social">
+								<li>
+									<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+								</li>
+							</ul>
+							<hr>
+							<p>Lorem ipsum dolor sit amet consectetur to adipiscing elit, sed dot eiusmod tempor incididunt labore et dolore magna aliqua. Veniam quis nostrud exercitation ullamco laboris nisiut. Lorem ipsum dolor sit amet consectetur to adipiscing elit, sed dot eiusmod tempor incididunt labore et dolore magna aliqua. Veniam quis nostrud exercitation ullamco laboris nisiut.</p>
+							<p>Lorem ipsum dolor sit amet consectetur to adipiscing elit, sed dot eiusmod tempor incididunt labore et dolore magna aliqua. Veniam quis nostrud exercitation ullamco laboris nisiut.</p>
+							<h4>Education Background</h4>
+							<p>Lorem ipsum dolor sit amet consectetur to adipiscing elit, sed dot eiusmod tempor incididunt labore et dolore magna aliqua. Veniam quis nostrud exercitation ullamco laboris nisiut.</p>
+							<h4>Skills &amp; Expreriences</h4>
+							<p>Lorem ipsum dolor sit amet consectetur to adipiscing elit, sed dot eiusmod tempor incididunt labore et dolore magna aliqua. Veniam quis nostrud exercitation ullamco laboris nisiut.</p>
+							<p>Lorem ipsum dolor sit amet consectetur to adipiscing elit, sed dot eiusmod tempor incididunt labore et dolore magna aliqua. Veniam quis nostrud exercitation ullamco laboris nisiut.</p>
+
+						</div>
+					</div>
+				</div>
+
+			</div>	
+		</div>
+	</div>
+	<!-- End team -->
+
+	<!-- Call  action -->
+	<div class="call-action call-action-small parallaxie has-parallax" style="background:url('{% static 'web/image/call-action-bg.jpg' %}');">
+		<div class="overly">
+			<div class="container">
+				<div class="row">
+					<div class="cta-sameline">
+						<h3>Ready to start work with us?</h3>
+						<a class="btn solid-btn" href="contact.html">Get In Touch</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End call action -->
+{% endblock %}

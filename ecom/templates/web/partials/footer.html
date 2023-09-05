@@ -1,0 +1,129 @@
+{% load static %}
+
+<!-- footer widget-->
+<div class="footer-widget section-pad">
+    <div class="container">
+        <div class="row">
+            <div class="widget-container row">
+                <div class="footer-col about-us col-md-3 col-sm-6 res-m-bttm">
+                    <h5 class="heading-col">about us</h5>
+                    <div class="bottom-des">
+                        <div class="about-des">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                            <a href="about-us.html">Read More...</a>
+                        </div>
+                        <div class="subscribe">
+                            <form id="formemail" action="" method="POST">
+                                {% csrf_token %}
+                                <input type="hidden" class="" name="formhidden" value="formemail">
+                                <input name="email_1" class="form-control required email" type="email" placeholder="Email for Newsletter">
+                                <input type="submit" name="submit" value="Signup"  class="submit">
+                                <div class="form-results"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col navigation col-md-2 col-md-offset-1 col-sm-6 res-m-bttm">
+                    <h5 class="heading-col">navigation</h5>
+                    <ul class="bottom-des">
+                        <li >
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li >
+                            <a href="about-us.html">About Us</a>
+                        </li>
+                        <li >
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li >
+                            <a href="service.html">Our services</a>
+                        </li>
+                        <li >
+                            <a href="contact.html">Contact us</a>
+                        </li>
+                        <li >
+                            <a href="#">Sitemap </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col service-col col-md-3 col-sm-6 res-m-bttm">
+                    <h5 class="heading-col">our services</h5>
+                    <ul class="bottom-des">
+                        <li >
+                            <a href="service-single.html">Land Transport</a>
+                        </li>
+                        <li >
+                            <a href="service-single.html">Warehousing</a>
+                        </li>
+                        <li >
+                            <a href="service-single.html">Fast Delivery</a>
+                        </li>
+                        <li >
+                            <a href="service-single.html">Worldwide Transport</a>
+                        </li>
+                        <li >
+                            <a href="service-single.html">Sea Freight</a>
+                        </li>
+                        <li >
+                            <a href="service-single.html">Reliable</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col contact col-md-3 col-sm-6">
+                    <h5 class="heading-col">contact us</h5>
+                    <ul class="bottom-des contact-des">
+                        <li>
+                            <i class="fa fa-map" aria-hidden="true"></i>
+                            <span>1234 Sed ut perspiciatis Road,
+                            <br>At vero eos, D58 8975, London.</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span>Toll Free : (123) 4567 8910<br>
+                            Telephone : (123) 1234 5678</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span>Email : <a href="#">info@sitename.com</a><br>
+                            Web : <a href="#">www.sitename.com</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End footer widget -->
+
+<!-- Copyright -->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <span>Copyright <i class="fa fa-copyright" aria-hidden="true"></i>
+             2017 Tranship. All Rights Reserved. Template by <a href="http://softnio.com/" target="_blank">Softnio.</a></span>
+             <ul class="social">
+                <li>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End copyright -->
+
+<!-- preload slider image for carousel -->
+<div class="preload hide">
+    <img alt="" src="{% static 'web/image/banner.jpg' %}">
+    <img alt="" src="{% static 'web/image/banner-2.jpg' %}">
+    <img alt="" src="{% static 'web/image/banner-3.jpg' %}">
+</div>
+<!-- End -->

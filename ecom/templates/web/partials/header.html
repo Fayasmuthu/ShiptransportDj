@@ -1,0 +1,146 @@
+{% load static %}
+
+<!-- navbar -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top" data-spy="affix" data-offset-top="100">
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <ul class="contact">
+                    <li class="phone">
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                        <span>1-234-567-8000</span>
+                    </li>
+                    <li class="mail hidden-xs">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <span>tranship@mail.com</span>
+                    </li>
+                    <li class="time hidden-xs">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span>Sat - Thu: 8AM - 7PM </span>
+                    </li>
+                </ul>
+               
+                    
+
+                <ul class="social">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+
+                <ul class="dark-brightness">
+                    <li class="brightness">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                        </svg>
+                    </li>
+                    <li class="brightness">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun-fill hidden" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 13a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-1a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-1a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-1a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                        </svg>
+                    </li>
+                </ul>
+                
+                
+                
+                
+            </div>
+        </div>
+    </div>
+    <div class="bottom-nav">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <a class="" href="{% url 'index' %}"><img alt="trtrtrt" src="{% static 'web/image/logo.png' %}" srcset="{% static 'web/image/logo.png ' %} 1x, {% static 'web/image/logo2x.png '%} 1x"></a>
+                <ul class="nav navbar-nav ">
+                    <li><a href="{% url 'index2' %}">home</a></li>
+                    <li><a href="{% url 'about1' %}">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="{% url 'service' %}" class="dropdown-toggle">Our Services <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url 'service-single' %}">Land Transport</a></li>
+                            <li><a href="{% url 'service-single2' %}">Warehousing</a></li>
+                            <li><a href="{% url 'service-single' %}">Fast Delivery</a></li>
+                            <li><a href="{% url 'service-single2' %}">Worldwide Transport</a></li>
+                            <li><a href="{% url 'service-single' %}">Sea Freight</a></li>
+                            <li><a href="{% url 'service-single2' %}">Reliable</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{% url 'blog' %}">Blog</a></li>
+                    <li class="dropdown mega-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<span class="caret"></span></a>				
+                        <ul class="dropdown-menu mega-dropdown-menu">
+                            <li class="col-md-4 npl hidden-xs hidden-sm">
+                                <div class="imagebg">
+                                    <img alt="" src="{% static 'web/image/mega.jpg' %}">
+
+                                </div>
+                            </li>
+                            <li class="col-md-8 col-sm-12">
+                                <ul class="menu-wrapper row">
+                                    <li class="col-sm-4">
+                                        <ul class="n-0-b megacontent">
+                                            <li><a href="{% url 'about1' %}">About Us</a></li>
+                                            <li><a href="{% url 'aboutus' %}">About Us - Extend</a></li>
+                                            <li><a href="{% url 'team' %}">Our Team</a></li>
+                                            <li><a href="{% url 'faqs' %}">Faqs </a></li>
+                                            <li><a href="{% url 'faqsextend' %}">Faqs - Extend</a></li>
+                                            <li><a href="{% url 'product' %}">Product Lists</a></li>
+                                            <li><a href="{% url 'project-single' %}">Product Single</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <ul class="megacontent">
+                                            <li><a href="{% url 'service' %}">Service List</a></li>
+                                            <li><a href="{% url 'service-extend' %}">Service List - Extend</a></li>
+                                            <li><a href="{% url 'service-single' %}">Service Single</a></li>
+                                            <li><a href="{% url 'service-single2' %}">Service Single - Extend</a></li>
+                                            <li><a href="{% url 'project' %}">Project List</a></li>
+                                            <li><a href="{% url 'project-extend' %}">Project List - Extend</a></li>
+                                            <li><a href="{% url 'project-single' %}">Project Single</a></li>							
+                                        </ul>
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <ul class="megacontent">
+                                            <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                                            <li><a href="{% url 'gallery-extend' %}">Gallery - Extend</a></li>
+                                            <li><a href="{% url 'galleryP' %}">Photo Gallery</a></li>
+                                            <li><a href="{% url 'gallery-all' %}">Photo Gallery - All</a></li>
+                                            <li><a href="{% url 'error' %}">Error 404</a></li>   
+                                            <li><a href="{% url 'megamenu' %}">Mega Menu  <span class="label label-warning">New</span></a></li>
+                                            <li><a href="{% url 'typography' %}">Typography</a></li>                     
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>				
+                    </li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a class="btn btn-quote trns-btn" href="{% url 'get' %}">get a quote</a></li>
+                </ul>
+                </div>    
+                <!-- /.navbar-collapse -->
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- End navabr -->

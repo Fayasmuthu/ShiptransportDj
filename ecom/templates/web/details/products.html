@@ -1,0 +1,253 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'web/css/magnific-popup.css' %}">
+	<!-- Banner -->
+	<div class="banner inner-page abt-us-banner">
+		<div class="banner-content">
+			<div class="container">
+				<div class="row">
+					<div class="banner-text">
+						<h1 class="page-title">Our Product</h1>
+						<p class="page-breadcrumb">Home / <span class="current">Product Collection</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End banner -->
+	<!-- Main Content Section -->
+	<div class="main-content products-section section-pad">
+	    <div class="container">
+	        <div class="row">
+				<div class="products-listing row">
+	        		<div class="col-md-8 res-m-bttm">
+			        	<h2 class="section-heading">OUR VALUABLE PRODUCTS</h2>
+						<p>Cepsum dolor sit amet consectetur to adipiscing elit, sed dot eiusmod tempor incididunt labore et dolore magna aliqua. Veniam quis nostrud exercitation ullamco laboris.</p>
+						
+						<div class="clear"></div>
+			        	<!-- Product Filer by Category - Filter Menu -->
+						<div class="clear"></div>
+						<div class="gallery-lists alignl filter-menu text-center">
+		                    <ul class="list">
+		                        <li class="active" data-filter="all">all</li>
+		                        <li data-filter="1">Electronic</li>
+		                        <li data-filter="2">Battery</li>
+		                        <li data-filter="3">Cerels</li>
+		                        <li data-filter="4">Others</li>
+		                    </ul>
+						</div>
+						<!-- Product List section (!required 'gallery-filter' class name in gallery & also filter-menu section above) -->
+						<div class="gallery gallery-filter gallery-products with-caption hover-fade">
+
+							<ul class="photos-list col-x2">
+								<li class="filtr-item" data-category="1">
+									<div class="photo">
+										<img src="{% static 'web/image/image-j-2x.jpg' %}" alt="Photo Title 1">
+										<div class="photo-link">
+											<span class="links">
+												<a class="btn more-link" href="product-single.html">View Product</a>
+											</span>
+										</div>
+									</div>
+									<div class="photo-caption">
+										<a href="product-single.html">
+											<h4>I-3 Robot</h4>
+											<p>- Electronic</p>
+										</a>
+									</div>
+								</li>
+								<li class="filtr-item" data-category="2, 3">
+									<div class="photo">
+										<img src="{% static 'web/image/image-i-2x.jpg' %}" alt="Photo Title 2">
+										<div class="photo-link">
+											<span class="links">
+												<a class="btn more-link" href="product-single.html">View Product</a>
+											</span>
+										</div>
+									</div>
+									<div class="photo-caption">
+										<a href="product-single.html">
+											<h4>Afroz Battery</h4>
+											<p>- Battery, Cerels</p>
+										</a>
+									</div>
+								</li>
+								<li class="filtr-item" data-category="3">
+									<div class="photo">
+										<img src="{% static 'web/image/image-k-2x.jpg' %}" alt="Photo Title 3">
+										<div class="photo-link">
+											<span class="links">
+												<a class="btn more-link" href="product-single.html">View Product</a>
+											</span>
+										</div>
+									</div>
+									<div class="photo-caption">
+										<a href="product-single.html">
+											<h4>M-2 Headphone</h4>
+											<p>- Cerels</p>
+										</a>
+									</div>
+								</li>
+								<li class="filtr-item" data-category="4, 1">
+									<div class="photo">
+										<img src="{% static 'web/image/image-l-2x.jpg' %}" alt="Photo Title 4">
+										<div class="photo-link">
+											<span class="links">
+												<a class="btn more-link" href="product-single.html">View Product</a>
+											</span>
+										</div>
+									</div>
+									<div class="photo-caption">
+										<a href="product-single.html">
+											<h4>R-1 Microphone</h4>
+											<p>- Electronic, Others</p>
+										</a>
+									</div>
+								</li>
+							</ul>
+
+						</div>
+						<!-- Product Showcase #end -->
+						<div class="product-intro content">
+							<hr>
+							<div class="row">
+								<div class="col-sm-6 res-m-bttm">
+									<!-- Feature ImageBox -->
+									<div class="feature-imagebox">
+										<div class="block">
+											<h3>Imported Products</h3>
+											<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+											<a href="#" class="btn solid-btn">View Products </a>
+										</div>
+										<div class="imagebg">
+											<img src="{% static 'web/image/image-l-2x.jpg' %}" alt="">
+										</div>
+									</div>
+									<!-- Feature ImageBox #end -->
+								</div>
+
+								<div class="col-sm-6">
+									<!-- Feature ImageBox -->
+									<div class="feature-imagebox dark imagebox">
+										<div class="block">
+											<h3>Exported Products</h3>
+											<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+											<a href="#" class="btn solid-btn">View Products </a>
+										</div>
+										<div class="imagebg">
+											<img src="{% static 'web/image/image-k-2x.jpg' %}" alt="">
+										</div>
+									</div>
+									<!-- Feature ImageBox #end -->
+								</div>
+
+							</div>
+							
+						</div>
+
+					</div>
+					<!-- Sidebar -->
+					<div class="col-md-4">
+						<div class="sidebar-right">
+
+							<div class="wgs-box wgs-menus">
+								<h3 class="wgs-heading">Products Category</h3>
+								<div class="wgs-content">
+									<ul class="list list-grouped">
+										<li class="list-heading">
+											<a href="#"><span>Imported Products</span></a>
+										</li>
+										<li class="list-heading">
+											<a href="#"><span>Exported Products</span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="wgs-box wgs-contact-info">
+								<h3 class="wgs-heading">Contact Information</h3>
+								<div class="wgs-content boxed">
+									<ul class="contact-list">
+										<li>
+											<i class="fa fa-map" aria-hidden="true"></i>
+											<span>1234 Sed ut perspiciatis Road, <br>At vero eos, D58 8975, London.</span>
+										</li>
+										<li>
+											<i class="fa fa-phone" aria-hidden="true"></i>
+											<span>(123) 4567 8910</span>
+										</li>
+										<li>
+											<i class="fa fa-envelope" aria-hidden="true"></i>
+											<span>Email : <a href="#">info@sitename.com</a></span>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="wgs-box boxed">
+								<h3 class="wgs-heading">Featured Products</h3>
+								<div class="wgs-content">
+									<p><img src="image/image-k-2x.jpg" alt=""></p>
+									<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+									<p><a href="product-single.html" class="btn btn-full solid-btn">More About Product </a></p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- Sidebar #end -->
+	        	</div>
+
+	        </div>
+	    </div>
+	</div>
+	<!-- End Project section -->
+	<!-- Call  action -->
+	<div class="call-action call-action-small parallaxie has-parallax" style="background:url('image/call-action-bg.jpg');">
+		<div class="overly">
+			<div class="container">
+				<div class="row">
+					<div class="cta-sameline">
+						<h3>Ready to start work with us?</h3>
+						<a class="btn solid-btn" href="contact.html">Get In Touch</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End call action -->
+
+	<!-- Client logo -->
+	<div class="cl-logo section-pad">
+		<div class="container">
+			<div class="row">
+				<div class="owl-carousel loop logo-carousel">
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-1.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-2.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-3.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-4.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos-5.png' %}">
+					</div>
+					<div>
+						<img alt="" width="190" height="82" src="{% static 'web/img/client logos.png' %}">
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!-- Client logo -->
+
+	<script src="{% static 'web/js/filterizr.min.js' %}"></script>
+	<script src="{% static 'web/js/magnific-popup.min.js' %}"></script>
+	{% endblock %}

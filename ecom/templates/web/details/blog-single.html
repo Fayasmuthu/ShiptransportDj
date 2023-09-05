@@ -1,0 +1,181 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+
+{% block content %}
+
+	<!-- Banner -->
+	<div class="banner inner-page blog-banner">
+		<div class="banner-content">
+			<div class="container">
+				<div class="row">
+					<div class="banner-text">
+						<h1 class="page-title">Blog</h1>
+						<p class="page-breadcrumb">Home / <a href="blog.html"><span>Our Blog</span></a> / <span class="current">Post title goes here</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End banner -->
+
+	<!-- Main Content -->
+	<div class="main-content blog section-pad">
+		<div class="container">
+			<div class="row">
+				<div class="blog-wrapper row">
+					<div class="col-md-8">
+
+						<div class="post post-single">
+							<div class="top-blog">
+								<img alt="" src="{% static 'web/image/blog-img.jpg' %}">
+								<ul class="blog-stat">
+									<li>
+										<i class="fa fa-calendar" aria-hidden="true"></i><span>26, Nov 2016</span>
+									</li>
+									<li>
+										<i class="fa fa-eye" aria-hidden="true"></i><span>165 Views</span>
+									</li>
+									<li>
+										<i class="fa fa-comment" aria-hidden="true"></i><span>7 Comments</span>
+									</li>
+									<li>
+										<i class="fa fa-tag" aria-hidden="true"></i><span>Cargo, Logistic</span>
+									</li>
+								</ul>
+							</div>
+							<div class="blog-des content">
+								<h1>Sed ut perspiciatis unde omnis iste.</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+								<p>Eius aeque complectitur no eum, propriae liberavisse usu ad. Partem denique repudiandae id has, in probo scripta pri, eam an justo corpora. Vidisse epicuri eu eos, equidem intellegam usu ea. Ei sea vidit percipit, quo ne quodsi percipit, eum te mediocrem appellantur. </p>
+								<h3>Ea detracto dignissim qui scripserit eu.</h3>
+								<p> Nullam repudiare liberavisse eos ad, adhuc labore mel ad. Nonumy audiam vidisse at mea, eum in saperet pertinax scriptorem. Elitr consectetuer eu his, pri quas albucius hendrerit in, labores copiosae complectitur ei pro. Ei mollis fabellas probatus estius etiam ea pri, malis dolores usu.</p>
+								<ul class="list-style arrow">
+									<li>Mei vidit assueverit.</li>
+									<li>complectitur no eum, propriae liberavisse usu.</li>
+									<li>Nullam repudiare liberavisse eos ad.</li>
+									<li>Ei sea vidit percipit, quo ne quodsi percipit, eum te mediocrem appellantur.</li>
+								</ul>
+								<p>Eius aeque complectitur no eum, propriae liberavisse usu ad. Partem denique repudiandae id has, in probo scripta pri, eam an justo corpora. Vidisse epicuri eu eos, equidem intellegam usu ea. Ei sea vidit percipit, quo ne quodsi percipit, eum te mediocrem appellantur. Ea detracto dignissim qui, ius fastidii patrioque scripserit eu.</p>
+								<h4>Eius aeque complectitur no eum, propriae liberavisse usu ad.</h4>
+								<ol>
+									<li>Mei vidit assueverit.</li>
+									<li>complectitur no eum, propriae liberavisse usu.</li>
+									<li>Nullam repudiare liberavisse eos ad.</li>
+									<li>Ei sea vidit percipit, quo ne quodsi percipit, eum te mediocrem appellantur.</li>
+								</ol>
+								<p>Eius aeque complectitur no eum, propriae liberavisse usu ad. Partem denique repudiandae id has, in probo scripta pri, eam an justo corpora. Vidisse epicuri eu eos, equidem intellegam usu ea. Ei sea vidit percipit, quo ne quodsi percipit, eum te mediocrem appellantur. </p>
+								<p>Eius aeque complectitur no eum, propriae liberavisse usu ad. Partem denique repudiandae id has, in probo scripta pri, eam an justo corpora. Vidisse epicuri eu eos, equidem intellegam usu ea. Ei sea vidit percipit, quo ne quodsi percipit, eum te mediocrem appellantur. </p>
+							</div>
+							<div class="contact content">
+								<div class="message">
+									<div class="message-group">
+										<div class="gaps"></div>
+										<h3>Leave a Comment</h3>
+
+										<form class="form-message" method="POST">
+											{% csrf_token %}
+											<div class="form-group row">
+												<div class="form-field col-md-6 form-m-bttm">
+													<input type="text" placeholder="Your Name" name="L-name" class="form-control">
+												</div>
+												<div class="form-field col-md-6">
+													<input type="email" placeholder="Your Email" name="L-email" class="form-control">
+												</div>
+											</div>
+											<div class="form-group row">
+												<div class="form-field col-md-12">
+													<textarea placeholder="Your Comment" name="L-comment" class="area-from form-control"></textarea>
+												</div>
+											</div>
+											<button type="submit" class="btn solid-btn sb-h">Submit</button>
+										</form>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-md-4">
+						<div class="right-blog">
+							<div class="form-group">
+								<input type="text" class="form-control"  placeholder="search">
+								<button class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+							</div>
+							<div class="recent">
+								<h3 class="right-heading">Recent Posts</h3>
+								<ul class="blog-recent">
+									<li>
+										<a href="blog-single.html">
+											<img alt="" src="{% static 'web/image/recent-blog-img.png' %}">
+											<p>Sed ut perspiciatis unde omnis iste natus error sit volup accus antium doloremque laudantiu...</p>
+										</a>
+									</li>
+									<li>
+										<a href="blog-single.html">
+											<img alt="" src="{% static 'web/image/recent-blog-img2.png' %}">
+											<p>Sed ut perspiciatis unde omnis iste natus error sit volup accus antium doloremque laudantiu...</p>
+										</a>
+									</li>
+									<li>
+										<a href="blog-single.html">
+											<img alt="" src="{% static 'web/image/recent-blog-img3.png' %}">
+											<p>Sed ut perspiciatis unde omnis iste natus error sit volup accus antium doloremque laudantiu...</p>
+										</a>
+									</li>
+									<li>
+										<a href="blog-single.html">
+											<img alt="" src="{% static 'web/image/recent-blog-img4.png' %}">
+											<p>Sed ut perspiciatis unde omnis iste natus error sit volup accus antium doloremque laudantiu...</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tag">
+								<h3 class="right-heading">Tags</h3>
+								<ul class="tag-list clearfix">
+									<li>
+										<a href="#">Shipping</a>
+									</li>
+									<li>
+										<a href="#">Cargo</a>
+									</li>
+									<li>
+										<a href="#">Delivery</a>
+									</li>
+									<li>
+										<a href="#">Safe</a>
+									</li>
+									<li>
+										<a href="#">Fast</a>
+									</li>
+									<li>
+										<a href="#">sea</a>
+									</li>
+								</ul>
+							</div>
+							<div class="blog-contact">
+								<h3 class="right-heading">Our Address</h3>
+								<ul class="contact-list">
+									<li>
+										<i class="fa fa-map" aria-hidden="true"></i><span>1234 Sed ut perspiciatis Road, <br>At vero eos, D58 8975, London.</span>
+									</li>
+									<li>
+										<i class="fa fa-phone" aria-hidden="true"></i><span>Toll Free     : (123) 4567 8910 <br>Telephone : (123) 1234 5678</span>
+									</li>
+									<li>
+										<i class="fa fa-envelope" aria-hidden="true"></i><span>Email : <a href="mailto:info@sitename.com">info@sitename.com</a> <br>Web : <a href="#">www.yoursitename.com</a></span>
+									</li>
+									<li>
+										<i class="fa fa-clock-o" aria-hidden="true"></i><span>Sat - Thu: 8AM - 7PM </span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Main content -->
+	{% endblock %}

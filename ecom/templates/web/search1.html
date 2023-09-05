@@ -1,0 +1,121 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+{% block content %}
+<!-- Banner -->
+<div class="banner inner-page blog-banner">
+	<div class="banner-content">
+		<div class="container">
+			<div class="row">
+				<div class="banner-text">
+					<h1 class="page-title">blog</h1>
+					<p class="page-breadcrumb">Home / <span class="current">Our Blog</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End banner -->
+    <div class="searchfilter container">
+        <div class="col-lg-12">
+            <div class="form-group">
+                <form action="{% url 'search' %}" method="get">
+                    <input type="text"class="form-control"placeholder="Search"name="query"id="query" />
+					<button class="search-btn">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    <div class="searchresult ">
+        {% if results or resultRight %}
+            <h2>Search Results for "{{ query }}"</h2>
+            <ul>
+                <center>
+                    {% for i in results %}
+					<li>{{ i.title }}</li>
+					{% endfor %}
+                </center>
+            </ul>
+            <ul>
+                {% for r in resultRight %}
+				<li>{{ r.titles }}</li>
+				{% endfor %}
+            </ul>
+        {% else %}
+            <center>
+                <p>No results found.</p>
+            </center>
+        {% endif %}
+    </div>
+</div>
+
+    <!-- Main content -->
+    <div class="main-content blog section-pad">
+        <div class="container">
+            <div class="row">
+                <div class="blog-wrapper row">
+                    <div class="col-md-8">
+                        <ul class="blog-group">
+                            {% for b in results %}
+                                <li class="blog-list">
+                                    <div class="top-blog">
+                                        <a href="{% url 'blog-single' %}">
+                                            <img alt="" src="{{ b.image.url }}">
+                                            <ul class="blog-stat">
+                                                <li>
+                                                    <i class="fa fa-calendar" aria-hidden="true"></i><span>{{ b.publication_date
+                                                    }}</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-eye" aria-hidden="true"></i><span>{{ b.views }} Views</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-comment" aria-hidden="true"></i><span>{{ b.comments }}
+                                                    Comments</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-tag" aria-hidden="true"></i><span>{{ b.tags }}</span>
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                    <div class="blog-des content">
+                                        <h2>
+                                            <a href="{% url 'blog-single' %}">{{ b.title }}</a>
+                                        </h2>
+                                        <p>{{ b.content }}</p>
+                                        <a class="btn trns-btn" href="{% url 'blog-single' %}">Read More</a>
+                                    </div>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="right-blog">
+                            <div class="recent">
+                                {% if resultRight %}
+                                    <ul class="blog-recent">
+                                        <h3 class="right-heading">Recent Posts</h3>
+                                        {% for r in resultRight %}
+                                            <li>
+                                                <a href="{% url 'blog-single' %}">
+                                                    <img alt="" src="{{ r.image.url }}">
+                                                    <p>
+                                                        <b>{{ r.titles }}</b>
+                                                    </p>
+                                                    <p>{{ r.content }}</p>
+                                                    <p>{{ r.published_date }}</p>
+                                                </a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main content -->
+{% endblock %}
